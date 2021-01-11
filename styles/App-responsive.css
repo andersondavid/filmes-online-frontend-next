@@ -1,0 +1,104 @@
+@media (max-width: 1330px) {
+    .list-show-items {
+        grid-template-columns: repeat(4, minmax(150px, 25vw));
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .list-show-items {
+        grid-template-columns: repeat(3, minmax(100px, 33vw));
+    }
+    .component-player {
+        flex-direction: column;
+    }
+    .component-player .select-player-option {
+        max-width: 100%;
+        margin-left: 0;
+        background: var(--transparent);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .homepage-container {
+        flex-direction: column;
+    }
+    .homepage-container .grid-main {
+        width: 100%
+    }
+    .list-show-items {
+        grid-template-columns: repeat(4, minmax(auto, calc(25vw - 20px)));
+    }
+    .menu-head-mobile {
+        display: block;
+    }
+    .menu-head {
+        display: none;
+    }
+    .search-bar-home {
+        display: none
+    }
+    .grid-eps ul {
+        grid-template-columns: repeat(3, minmax(auto, auto));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .component-desc-watch {
+        flex-direction: column;
+    }
+    .list-show-items {
+        grid-template-columns: repeat(2, minmax(auto, calc(50vw - 25px)));
+    }
+    .grid-eps ul {
+        grid-template-columns: repeat(2, minmax(auto, auto));
+    }
+}
+
+/*======================================*/
+
+/*======= MOBILE =======================*/
+
+@media screen and (max-width: 800px) {
+    .item-menu {
+        position: relative;
+        margin-right: 1em;
+        padding: 10px;
+        display: block !important;
+    }
+    .header-dropdown {
+        position: relative;
+        top: 0px;
+    }
+    .header-dropdown .dropdown {
+        margin-top: 10px;
+        height: 160px;
+        width: auto;
+        box-shadow: none;
+        background: var(--bg-light-color);
+    }
+    li.item-menu:hover .header-dropdown {
+        top: 0;
+    }
+    .searchbar-container {
+        padding: 15px 0;
+        border: solid #ffffff22;
+        border-width: 1px 0;
+    }
+    .searchbar-container .logo {
+        text-align: center;
+        margin: 2em;
+        display: none;
+    }
+    .searchbar-input {
+        height: 2.5em;
+        padding-left: 1em;
+        width: 85%;
+        margin: 0 7.5%;
+    }
+    .searchbar-submit {
+        font-size: 1.5em;
+        height: 2em;
+        right: calc(7.5% + 0.5em);
+    }
+}
