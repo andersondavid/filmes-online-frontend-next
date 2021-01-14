@@ -1,22 +1,29 @@
-import { Link, useParams } from 'react-router-dom'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-const Paginator = props => {
-  let { page } = useParams()
+const Paginator = ({ numberPages }) => {
+  const router = useRouter()
+  const parent = router.query
+  let { Categorys, SeeMore } = parent
 
-  let renderBtn = page - 3
+  const [type, currentPage] = Categorys == undefined ? SeeMore : Categorys
+
+  let renderBtn = currentPage - 3
   let numbers = []
 
   for (let i = 0; i < 5; i++) {
     renderBtn++
 
-    if (renderBtn > 0 && renderBtn <= props.numberPages) {
-      console.log(page, renderBtn)
-
+    if (renderBtn > 0 && renderBtn <= numberPages) {
       numbers.push(
-        <Link key={i.toString()} href={{ pathname: renderBtn }}>
-          <span className={page == renderBtn ? 'current btns' : 'btns'}>
-            {renderBtn}
-          </span>
+        <Link key={i.toString()} href={`${type}/${renderBtn}`}>
+          <a>
+            <span
+              className={currentPage == renderBtn ? 'current btns' : 'btns'}
+            >
+              {renderBtn}
+            </span>
+          </a>
         </Link>
       )
     }
@@ -24,41 +31,43 @@ const Paginator = props => {
 
   return (
     <div className='container-paginator'>
-      <Link
-        href={{ pathname: page - 1 }}
-        style={{ pointerEvents: page == 1 ? 'none' : 'auto' }}
-        className='btn-paginator'
-      >
-        ANTERIOR
-      </Link>
+      <span style={{ pointerEvents: currentPage == 1 ? 'none' : 'auto' }}>
+        <Link href={`${type}/${currentPage - 1}`} className='btn-paginator'>
+          ANTERIOR
+        </Link>
+      </span>
 
       <div className='paginator-list'>
-        {page > 3 && (
+        {currentPage > 3 && (
           <span>
-            <Link href={{ pathname: 1 }}>
+            <Link href='1'>
               <span className='btns'>1</span>
             </Link>
             <span className='dots'>...</span>
           </span>
         )}
         {numbers}
-        {(page + 3) < props.numberPages && (
+        {currentPage + 3 < numberPages && (
           <span>
             <span className='dots'>...</span>
-            <Link href={{ pathname: props.numberPages }}>
-              <span className='btns'>{props.numberPages}</span>
+            <Link href={`${type}/${numberPages}`}>
+              <a>
+                <span className='btns'>{numberPages}</span>
+              </a>
             </Link>
           </span>
         )}
       </div>
-
-      <Link
-        href={{ pathname: parseInt(page, 10) + 1 }}
-        style={{ pointerEvents: page == props.numberPages ? 'none' : 'auto'}}
-        className='btn-paginator'
+      <span
+        style={{ pointerEvents: currentPage == numberPages ? 'none' : 'auto' }}
       >
-        PROXIMO
-      </Link>
+        <Link
+          href={`${type}/${parseInt(currentPage) + 1}`}
+          className='btn-paginator'
+        >
+          PROXIMO
+        </Link>
+      </span>
     </div>
   )
 }
