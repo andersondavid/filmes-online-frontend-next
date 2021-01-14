@@ -1,15 +1,16 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-import loading from '../../pages/api/loading'
+import loading from '../api/loading'
+import useFetch from '../api/useFetch'
 
-const Spotlight = ({ spotlightData }) => {
+const Spotlight = () => {
   let router = useRouter()
 
   let content = loading.recentFeed
-
-  if (spotlightData) {
-    content = spotlightData
+  const { data, error } = useFetch('/recentes')
+  if (data) {
+    content = data
   }
 
   const listSpotlight = content.filmes_destaques.map((item, index) => {

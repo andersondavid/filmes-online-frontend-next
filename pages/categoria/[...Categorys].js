@@ -4,9 +4,10 @@ import Paginator from '../../src/grid/Paginator'
 import SeachBar from '../../src/searchbar/SeachBar'
 import ErrorElem from '../../src/ErrorElem'
 import { useMemo } from 'react'
-import useFetch from '../api/useFetch'
-import loading from '../api/loading'
+import useFetch from '../../src/api/useFetch'
+import loading from '../../src/api/loading'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 const Categorys = ({ dataInitial }) => {
 
@@ -36,7 +37,7 @@ const Categorys = ({ dataInitial }) => {
     return (
       <GridItems
         itemsForGrid={content.resultado}
-        nameForGrid={'Ver mais filmes'}
+        nameForGrid={`Categoria ${type}`}
       />
     )
   }, [content])
@@ -49,6 +50,10 @@ const Categorys = ({ dataInitial }) => {
 
   return (
     <div className='see-more-container'>
+      <Head>
+        <title>Categorias - {type} - AmazoFlix</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <div className='search-bar-home'>
         <SeachBar />
       </div>

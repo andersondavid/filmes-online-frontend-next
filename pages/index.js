@@ -1,16 +1,16 @@
 /* lib */
 import Link from 'next/link'
-import useFetch from './api/useFetch'
-import loading from './api/loading'
+import Head from 'next/head'
+import useFetch from '../src/api/useFetch'
+import loading from '../src/api/loading'
 /* compoentes*/
 import SeachBar from '../src/searchbar/SeachBar'
 import Spotlight from '../src/grid/Spotlight'
 import GridItems from '../src/grid/GridItems'
-// import ErrorElem from '../src/ErrorElem'
-
+import ErrorElem from '../src/ErrorElem'
 
 const Home = () => {
-  let content = loading.recentFeed;
+  let content = loading.recentFeed
 
   const { data, error } = useFetch('/recentes')
 
@@ -22,6 +22,10 @@ const Home = () => {
 
   return (
     <div className='home-page'>
+      <Head>
+        <title>AmazoFlix - Filmes e Series de Graça</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <div className='search-bar-home'>
         <SeachBar />
       </div>
@@ -49,11 +53,11 @@ const Home = () => {
           </div>
         </main>
         <aside className='spotlight'>
-          <Spotlight spotlightData={data} />
+          <Spotlight />
         </aside>
       </div>
     </div>
   )
 }
 
-export default Home;
+export default Home

@@ -1,6 +1,7 @@
-import api from '../api/api'
-import loading from '../api/loading'
-import { useEffect, useState, useMemo } from 'react'
+import api from '../../src/api/api'
+import Head from 'next/head'
+//import loading from '../../src/api/loading'
+import { useEffect, useState } from 'react'
 
 import WatchDesc from '../../src/watch/WatcDesc'
 import Player from '../../src/watch/Player'
@@ -36,6 +37,10 @@ const Watch = ({ dataWatch }) => {
 
   return (
     <div className='container-watch'>
+      <Head>
+        <title>{dataWatch.titulo} - AmazoFlix</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <WatchDesc watchDescData={dataWatch} />
 
       {contentLinks && (

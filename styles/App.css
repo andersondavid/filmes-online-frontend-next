@@ -122,6 +122,7 @@ textarea:focus, input:focus, select:focus {
 
 .spotlight .sl-thumb {
   display: inline;
+  height: 45px;
 }
 
 .spotlight .sl-thumb figure {
