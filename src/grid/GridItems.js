@@ -1,5 +1,3 @@
-/* lib */
-
 import Link from 'next/link'
 
 const PostItem = props => {
@@ -36,7 +34,7 @@ const PostItem = props => {
   ))
 }
 
-const GridRecentItems = props => {
+const GridItems = props => {
   let { itemsForGrid, nameForGrid } = props
 
   return (
@@ -52,4 +50,4 @@ const GridRecentItems = props => {
   )
 }
 
-export default GridRecentItems
+export default GridItems

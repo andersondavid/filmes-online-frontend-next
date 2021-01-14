@@ -1,24 +1,24 @@
 /* lib */
-
 import Link from 'next/link'
-import api from './api/api'
+import useFetch from './api/useFetch'
 import loading from './api/loading'
 /* compoentes*/
-
 import SeachBar from '../src/searchbar/SeachBar'
 import Spotlight from '../src/grid/Spotlight'
-import GridRecentItems from '../src/grid/GridRecentItems'
-import ErrorElem from '../src/ErrorElem'
+import GridItems from '../src/grid/GridItems'
+// import ErrorElem from '../src/ErrorElem'
 
 
-export async function getStaticProps () {
-  const data = await api('/recentes')
+const Home = () => {
+  let content = loading.recentFeed;
 
-  return { props: { data: data } }
-}
+  const { data, error } = useFetch('/recentes')
 
-const Home = ({ data }) => {
-  let content = data
+  if (data) {
+    content = data
+  } else if (error) {
+    return <ErrorElem error={error} />
+  }
 
   return (
     <div className='home-page'>
@@ -33,7 +33,7 @@ const Home = ({ data }) => {
                 <a>Ver mais</a>
               </Link>
             </span>
-            <GridRecentItems
+            <GridItems
               itemsForGrid={content.filmes_recentes}
               nameForGrid={'Filmes Recentes'}
             />
@@ -42,7 +42,7 @@ const Home = ({ data }) => {
             <span className='link-see-more'>
               <Link href='/vermais/serie/1'>Ver mais</Link>
             </span>
-            <GridRecentItems
+            <GridItems
               itemsForGrid={content.series_recentes}
               nameForGrid={'Series Recentes'}
             />
@@ -56,4 +56,4 @@ const Home = ({ data }) => {
   )
 }
 
-export default Home
+export default Home;

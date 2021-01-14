@@ -1,6 +1,5 @@
 const Error = (props) => {
 
-	console.error("########## ERROR ###########");
 	console.error(props.error);
 	
 	return(

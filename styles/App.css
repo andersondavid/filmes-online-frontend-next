@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
 }
 
-* { 
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -37,7 +37,7 @@ body {
 
 textarea:focus, input:focus, select:focus {
   outline: 0;
-} 
+}
 
 
 .container-main {
@@ -311,7 +311,8 @@ textarea:focus, input:focus, select:focus {
 
 .iframe-player-container {
   flex-grow: 1;
-  max-width: 100%
+  max-width: 1200px;
+  margin: auto
 }
 
 .component-player .iframe-responsive {
@@ -407,6 +408,7 @@ textarea:focus, input:focus, select:focus {
   width: auto;
   background: var(--bg-light-color);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .grid-eps .thumb-ep img {
