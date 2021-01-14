@@ -116,45 +116,45 @@ const Spotlight = () => {
           <option value='/categoria/Séries Baseadas em Livros'>
             Séries Baseadas em Livros
           </option>
-          <option value='/categoria/Séries Antigas'>Séries Antigas</option>
-          <option value='/categoria/Séries Coreanas'>Séries Coreanas</option>
-          <option value='/categoria/Séries da Amazon'>Séries da Amazon</option>
-          <option value='/categoria/Séries Dubladas'>Séries Dubladas</option>
-          <option value='/categoria/Séries Legendadas'>
+          <option value='/categoria/Séries Antigas/1'>Séries Antigas</option>
+          <option value='/categoria/Séries Coreanas/1'>Séries Coreanas</option>
+          <option value='/categoria/Séries da Amazon/1'>Séries da Amazon</option>
+          <option value='/categoria/Séries Dubladas/1'>Séries Dubladas</option>
+          <option value='/categoria/Séries Legendadas/1'>
             Séries Legendadas
           </option>
-          <option value='/categoria/Séries Lançamentos'>
+          <option value='/categoria/Séries Lançamentos/1'>
             Séries Lançamentos
           </option>
-          <option value='/categoria/Séries Netflix'>Séries Netflix</option>
-          <option value='/categoria/Séries da AMC'>Séries da AMC</option>
-          <option value='/categoria/Séries da ABC'>Séries da ABC</option>
-          <option value='/categoria/Séries da Apple TV'>
+          <option value='/categoria/Séries Netflix/1'>Séries Netflix</option>
+          <option value='/categoria/Séries da AMC/1'>Séries da AMC</option>
+          <option value='/categoria/Séries da ABC/1'>Séries da ABC</option>
+          <option value='/categoria/Séries da Apple TV/1'>
             Séries da Apple TV
           </option>
-          <option value='/categoria/Séries da Amazon'>Séries da Amazon</option>
-          <option value='/categoria/Séries da BBC'>Séries da BBC</option>
-          <option value='/categoria/Séries da DC'>Séries da DC</option>
-          <option value='/categoria/Séries da Disney'>Séries da Disney</option>
-          <option value='/categoria/Séries da FOX'>Séries da FOX</option>
-          <option value='/categoria/Séries da FX'>Séries da FX</option>
-          <option value='/categoria/Séries GloboPlay'>Séries GloboPlay</option>
-          <option value='/categoria/Séries em HD'>Séries em HD</option>
-          <option value='/categoria/Séries da Hulu'>Séries da Hulu</option>
-          <option value='/categoria/Séries da HBO'>Séries da HBO</option>
-          <option value='/categoria/Séries Médicas'>Séries Médicas</option>
-          <option value='/categoria/Séries Nacionais'>Séries Nacionais</option>
-          <option value='/categoria/Séries da NBC'>Séries da NBC</option>
-          <option value='/categoria/Séries da PassionFlix'>
+          <option value='/categoria/Séries da Amazon/1'>Séries da Amazon</option>
+          <option value='/categoria/Séries da BBC/1'>Séries da BBC</option>
+          <option value='/categoria/Séries da DC/1'>Séries da DC</option>
+          <option value='/categoria/Séries da Disney/1'>Séries da Disney</option>
+          <option value='/categoria/Séries da FOX/1'>Séries da FOX</option>
+          <option value='/categoria/Séries da FX/1'>Séries da FX</option>
+          <option value='/categoria/Séries GloboPlay/1'>Séries GloboPlay</option>
+          <option value='/categoria/Séries em HD/1'>Séries em HD</option>
+          <option value='/categoria/Séries da Hulu/1'>Séries da Hulu</option>
+          <option value='/categoria/Séries da HBO/1'>Séries da HBO</option>
+          <option value='/categoria/Séries Médicas/1'>Séries Médicas</option>
+          <option value='/categoria/Séries Nacionais/1'>Séries Nacionais</option>
+          <option value='/categoria/Séries da NBC/1'>Séries da NBC</option>
+          <option value='/categoria/Séries da PassionFlix/1'>
             Séries da PassionFlix
           </option>
-          <option value='/categoria/Série da ShowTime'>
+          <option value='/categoria/Série da ShowTime/1'>
             Série da ShowTime
           </option>
-          <option value='/categoria/Séries da Starz'>Séries da Starz</option>
-          <option value='/categoria/Série da SyFy'>Série da SyFy</option>
-          <option value='/categoria/Séries da TNT'>Séries da TNT</option>
-          <option value='/categoria/Séries da The CW'>Séries da The CW</option>
+          <option value='/categoria/Séries da Starz/1'>Séries da Starz</option>
+          <option value='/categoria/Série da SyFy/1'>Série da SyFy</option>
+          <option value='/categoria/Séries da TNT/1'>Séries da TNT</option>
+          <option value='/categoria/Séries da The CW/1'>Séries da The CW</option>
         </select>
       </div>
       <div className='div-spotlight'>

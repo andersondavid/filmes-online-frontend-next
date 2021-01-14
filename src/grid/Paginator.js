@@ -4,10 +4,18 @@ import { useRouter } from 'next/router'
 const Paginator = ({ numberPages }) => {
   const router = useRouter()
   const parent = router.query
-  let { Categorys, SeeMore } = parent
+  let params = [];
+  let { Categorys, SeeMore, SearchPage } = parent
 
-  const [type, currentPage] = Categorys == undefined ? SeeMore : Categorys
+  if (Categorys != undefined) {
+    params = Categorys
+  } else if (SeeMore != undefined) {
+    params = SeeMore
+  } else if (SearchPage != undefined) {
+    params = SearchPage
+  }
 
+  const [type, currentPage] = params
   let renderBtn = currentPage - 3
   let numbers = []
 
