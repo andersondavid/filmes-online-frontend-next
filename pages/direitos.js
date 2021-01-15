@@ -1,8 +1,12 @@
+import Head from 'next/head'
 const Copyright = () => {
-  document.title = 'Direitos Reservados'
 
   return (
     <div className='page-right'>
+      <Head>
+        <title>Direitos reservados - Copyrights</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className='right-text'>
         <p>
           O site Amazoflix não hospeda nenhuma obra protegida pela Lei de

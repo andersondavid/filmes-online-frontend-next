@@ -16,7 +16,7 @@ const Spotlight = () => {
   const listSpotlight = content.filmes_destaques.map((item, index) => {
     return (
       <li key={item._id}>
-        <Link href={item.link}>
+        <Link href={'/' + item.link}>
           <a>
             <div className='sl-item'>
               <div className='sl-item-number'>
