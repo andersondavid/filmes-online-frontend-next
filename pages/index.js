@@ -9,15 +9,13 @@ import Spotlight from '../src/grid/Spotlight'
 import GridItems from '../src/grid/GridItems'
 import ErrorElem from '../src/ErrorElem'
 
-const Home = () => {
+const Home = ({ data }) => {
   let content = loading.recentFeed
 
-  const { data, error } = useFetch('/recentes')
+  //const { data, error } = useFetch('/recentes')
 
   if (data) {
     content = data
-  } else if (error) {
-    return <ErrorElem error={error} />
   }
 
   return (
@@ -61,3 +59,18 @@ const Home = () => {
 }
 
 export default Home
+
+export async function getServerSideProps (context) {
+  const response = await fetch('https://api-amazoflix.herokuapp.com/recentes')
+  const data = await response.json()
+
+  if (!data) {
+    return {
+      notFound: true
+    }
+  }
+
+  return {
+    props: { data } // will be passed to the page component as props
+  }
+}
