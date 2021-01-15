@@ -1,4 +1,4 @@
 module.exports = {
-  distDir: 'build',
+  //distDir: 'build',
   trailingSlash: true,
 }
