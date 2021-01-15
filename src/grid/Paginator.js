@@ -40,7 +40,7 @@ const Paginator = ({ numberPages }) => {
   return (
     <div className='container-paginator'>
       <span style={{ pointerEvents: currentPage == 1 ? 'none' : 'auto' }}>
-        <Link href={`${type}/${currentPage - 1}`} className='btn-paginator'>
+        <Link href={`${type}/${currentPage == 1 ? 1 : currentPage - 1}`} className='btn-paginator'>
           ANTERIOR
         </Link>
       </span>
@@ -58,7 +58,7 @@ const Paginator = ({ numberPages }) => {
         {currentPage + 3 < numberPages && (
           <span>
             <span className='dots'>...</span>
-            <Link href={`${type}/${numberPages}`}>
+            <Link href={`/${type}/${numberPages}`}>
               <a>
                 <span className='btns'>{numberPages}</span>
               </a>

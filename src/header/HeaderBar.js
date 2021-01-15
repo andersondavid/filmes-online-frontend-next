@@ -140,105 +140,105 @@ const HeaderBarDropdown2 = () => {
       <div className='dropdown'>
         <ul>
           <li>
-            <Link href='/categoria/Séries Baseada em Fatos Reais'>
+            <Link href='/categoria/Séries Baseada em Fatos Reais/1'>
               Séries Baseada em Fatos Reais
             </Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Baseadas em Livros'>
+            <Link href='/categoria/Séries Baseadas em Livros/1'>
               Séries Baseadas em Livros
             </Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Antigas'>Séries Antigas</Link>
+            <Link href='/categoria/Séries Antigas/1'>Séries Antigas</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Coreanas'>Séries Coreanas</Link>
+            <Link href='/categoria/Séries Coreanas/1'>Séries Coreanas</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da Amazon'>Séries da Amazon</Link>
+            <Link href='/categoria/Séries da Amazon/1'>Séries da Amazon</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Dubladas'>Séries Dubladas</Link>
+            <Link href='/categoria/Séries Dubladas/1'>Séries Dubladas</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Legendadas'>Séries Legendadas</Link>
+            <Link href='/categoria/Séries Legendadas/1'>Séries Legendadas</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Lançamentos'>Séries Lançamentos</Link>
+            <Link href='/categoria/Séries Lançamentos/1'>Séries Lançamentos</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Netflix'>Séries Netflix</Link>
+            <Link href='/categoria/Séries Netflix/1'>Séries Netflix</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da AMC'>Séries da AMC</Link>
+            <Link href='/categoria/Séries da AMC/1'>Séries da AMC</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da ABC'>Séries da ABC</Link>
+            <Link href='/categoria/Séries da ABC/1'>Séries da ABC</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da Apple TV'>Séries da Apple TV</Link>
+            <Link href='/categoria/Séries da Apple TV/1'>Séries da Apple TV</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da Amazon'>Séries da Amazon</Link>
+            <Link href='/categoria/Séries da Amazon/1'>Séries da Amazon</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da BBC'>Séries da BBC</Link>
+            <Link href='/categoria/Séries da BBC/1'>Séries da BBC</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da DC'>Séries da DC</Link>
+            <Link href='/categoria/Séries da DC/1'>Séries da DC</Link>
           </li>
         </ul>
         <ul>
           <li>
-            <Link href='/categoria/Séries da Disney'>Séries da Disney</Link>
+            <Link href='/categoria/Séries da Disney/1'>Séries da Disney</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da FOX'>Séries da FOX</Link>
+            <Link href='/categoria/Séries da FOX/1'>Séries da FOX</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da FX'>Séries da FX</Link>
+            <Link href='/categoria/Séries da FX/1'>Séries da FX</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries GloboPlay'>Séries GloboPlay</Link>
+            <Link href='/categoria/Séries GloboPlay/1'>Séries GloboPlay</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries em HD'>Séries em HD</Link>
+            <Link href='/categoria/Séries em HD/1'>Séries em HD</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da Hulu'>Séries da Hulu</Link>
+            <Link href='/categoria/Séries da Hulu/1'>Séries da Hulu</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da HBO'>Séries da HBO</Link>
+            <Link href='/categoria/Séries da HBO/1'>Séries da HBO</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Médicas'>Séries Médicas</Link>
+            <Link href='/categoria/Séries Médicas/1'>Séries Médicas</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries Nacionais'>Séries Nacionais</Link>
+            <Link href='/categoria/Séries Nacionais/1'>Séries Nacionais</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da NBC'>Séries da NBC</Link>
+            <Link href='/categoria/Séries da NBC/1'>Séries da NBC</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da PassionFlix'>
+            <Link href='/categoria/Séries da PassionFlix/1'>
               Séries da PassionFlix
             </Link>
           </li>
           <li>
-            <Link href='/categoria/Série da ShowTime'>Série da ShowTime</Link>
+            <Link href='/categoria/Série da ShowTime/1'>Série da ShowTime</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da Starz'>Séries da Starz</Link>
+            <Link href='/categoria/Séries da Starz/1'>Séries da Starz</Link>
           </li>
           <li>
-            <Link href='/categoria/Série da SyFy'>Série da SyFy</Link>
+            <Link href='/categoria/Série da SyFy/1'>Série da SyFy</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da TNT'>Séries da TNT</Link>
+            <Link href='/categoria/Séries da TNT/1'>Séries da TNT</Link>
           </li>
           <li>
-            <Link href='/categoria/Séries da The CW'>Séries da The CW</Link>
+            <Link href='/categoria/Séries da The CW/1'>Séries da The CW</Link>
           </li>
         </ul>
       </div>

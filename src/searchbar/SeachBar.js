@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from 'next/router'
 
-const SeachBar = () => {
+const SeachBar = ({fromMobile}) => {
   const [searchTerm, setSearchTerm] = useState("");
   const router = useRouter()
 
@@ -9,6 +9,10 @@ const SeachBar = () => {
   const submitSearch = (e) => {
     e.preventDefault()
     router.push(`/pesquisar/${searchTerm}/1`)
+    
+    if(fromMobile !== undefined){
+      fromMobile.setOpenedMenu(!fromMobile.openedMenu)
+    }
   };
 
   return (
