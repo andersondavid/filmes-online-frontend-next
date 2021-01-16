@@ -803,7 +803,7 @@ li.item-menu.expand-icon>a {
 }
 
 li.item-menu:hover .header-dropdown {
-  top: 50px;
+  top: 0px;
 }
 
 .header-dropdown {
